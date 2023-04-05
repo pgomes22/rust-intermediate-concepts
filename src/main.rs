@@ -8,4 +8,11 @@ fn main() {
         // .map(|t| (t.0 + 1, t.1))
         .map(|(x, y)| (x + 1, y))
         .for_each(|t| println!("{:?}", t));
+
+    let mut numbers = vec![1, 2, 3, 4];
+    for x in numbers.iter_mut() {
+        *x = *x * 3;
+    }
+
+    println!("{:?}", numbers);
 }
