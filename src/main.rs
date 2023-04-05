@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world!");
+    let square = |x| x * x;
+    println!("5 square is {}", square(5));
 }
